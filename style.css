@@ -1,5 +1,10 @@
-.foto{
-    
-    width: 300px;
-    height: 300px;
+.container-fluid{
+    background-color: #ffc107;
+}
+.text-frnt{
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+   align-items: flex -start; /* Alinha no topo verticalmente */
+    padding-top: 2vh;       /* Empurra o texto "um pouco abaixo" (20% da tela) */
+    height: 100vh;           /* Define a altura total da página */
 }
