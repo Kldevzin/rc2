@@ -1,10 +1,27 @@
 .container-fluid{
-    background-color: #ffc107;
+    background-color: #35604A;
 }
 .text-frnt{
     display: flex;
-    justify-content: center; /* Centraliza na horizontal */
-   align-items: flex -start; /* Alinha no topo verticalmente */
+    flex-direction: column;
+    justify-content: flex-start; /* (center)Centraliza na horizontal */
+   align-items: center; /* Alinha no topo verticalmente */
     padding-top: 2vh;       /* Empurra o texto "um pouco abaixo" (20% da tela) */
-    height: 100vh;           /* Define a altura total da página */
+    height: 100vh;          /* Define a altura total da página */
+}
+.img-p{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+    margin: 10px auto;
+}
+.nav-item .nav-link {
+  color: #fbf8f8;
+  transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: #35604A;
 }
