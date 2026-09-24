@@ -1,0 +1,89 @@
+
+
+.container-fluid
+css
+background-color: #35604A;
+
+Pinta o fundo do container fluido (provavelmente a navbar) com esse verde escuro específico.
+
+.text-frnt
+css
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding-top: 2vh;
+height: 10vh;
+display: flex + flex-direction: column → organiza os filhos (título, subtítulo) empilhados verticalmente
+justify-content: flex-start → como a direção é column, isso controla o eixo vertical: joga o conteúdo pro topo do container (em vez de centralizar)
+align-items: center → controla o eixo horizontal: centraliza o texto
+padding-top: 2vh → respiro de 2% da altura da tela no topo, antes do texto começar
+height: 10vh → a seção ocupa 10% da altura da tela (bem pequena — é por isso que essa seção não empurra mais o card lá pra baixo como antes)
+.img-p
+css
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 100%;
+display: block;
+margin: 10px auto;
+
+Estilo clássico de foto de perfil circular:
+
+width/height iguais (150px) → necessário pra virar um círculo perfeito
+object-fit: cover → se a imagem não for quadrada, ela é cortada (sem distorcer) pra preencher o quadrado 150x150 inteiro
+border-radius: 100% → arredonda até virar um círculo completo
+display: block + margin: 10px auto → centraliza a imagem horizontalmente (igual vimos antes) e dá 10px de espaço em cima/embaixo
+.nav-item .nav-link
+css
+color: #fbf8f8;
+transition: color 0.3s ease;
+color → cor do texto dos links da navbar (quase branco)
+transition: color 0.3s ease → quando a cor mudar (por exemplo no hover), a mudança acontece suavemente em 0.3 segundos, em vez de trocar de cor instantaneamente. ease é o "ritmo" da animação (começa mais rápido, desacelera no final)
+.nav-item .nav-link:hover
+css
+color: #35604A;
+
+Quando o mouse passa por cima do link, a cor muda pra esse verde (a mesma cor de fundo do container-fluid — provavelmente pra "sumir" no fundo ou criar um efeito de contraste, dependendo de onde está aplicado)
+
+.card
+css
+width: 350px;
+height: 350px;
+background-color: #3d4d44;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+margin: auto;
+margin-left: 100px;
+width/height: 350px → card com tamanho fixo, quadrado
+background-color → fundo verde-acinzentado escuro
+padding: 20px → respiro interno entre a borda do card e o conteúdo
+border-radius: 8px → cantos levemente arredondados
+box-shadow → sombra sutil (preto a 15% de opacidade, 2px abaixo, 8px de borrão) — dá a sensação de "elevação"
+margin: auto seguido de margin-left: 100px → aqui tem uma pegadinha: como margin-left: 100px vem depois de margin: auto, ele sobrescreve só a margem esquerda (que era auto), fixando em 100px. Na prática isso desativa a centralização automática só do lado esquerdo, empurrando o card pra direita em vez de centralizar — pode não ser o efeito que você queria!
+.titulo-card e .card-texto
+css
+color: #fffefe; /* título */
+color: aliceblue; /* texto */
+
+Só definem a cor do texto do título e do parágrafo dentro do card (tons de branco/azul bem claro, pra contrastar com o fundo escuro do card)
+
+.foto
+css
+width: 300px;
+border-radius: 4px;
+display: block;
+width: 300px → largura fixa da imagem dentro do card
+border-radius: 4px → cantos levemente arredondados (sutil, diferente do círculo da foto de perfil)
+display: block → remove aquele espacinho fantasma que <img> cria por padrão, e garante que a imagem se comporte como um bloco (ocupando a linha inteira)
+.texto-card1
+css
+display: block;
+margin-bottom: 12px;
+text-decoration: none;
+color: rgb(0, 136, 255);
+display: block → transforma o link (que é inline por padrão) num bloco, permitindo que margin-bottom funcione de verdade
+margin-bottom: 12px → espaço entre o link e o que vem depois dele (a imagem)
+text-decoration: none → remove o sublinhado padrão de links
+color: rgb(0, 136, 255) → azul, cor típica de link clicável

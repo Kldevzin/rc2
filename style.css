@@ -7,7 +7,7 @@
     justify-content: flex-start; /* (center)Centraliza na horizontal */
    align-items: center; /* Alinha no topo verticalmente */
     padding-top: 2vh;       /* Empurra o texto "um pouco abaixo" (20% da tela) */
-    height: 100vh;          /* Define a altura total da página */
+    height: 10vh;          /* Define a altura total da página */
 }
 .img-p{
     width: 150px;
@@ -25,3 +25,33 @@
 .nav-item .nav-link:hover {
   color: #35604A;
 }
+.card{
+  width: 350px;
+  height: 350px;
+  background-color: #3d4d44;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-left: 100px;
+}
+.titulo-card{
+  color: #fffefe;
+}
+.card-texto{
+  color: aliceblue;
+}
+
+.foto{
+  width: 300px;
+  border-radius: 4px;
+  display: block;
+}
+
+.texto-card1{
+  display:block;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: rgb(0, 136, 255);
+}
+
